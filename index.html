@@ -1,73 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./style.css"  />
-
-  <title>Novo usuario - Sujeito Programador</title>
+    <link rel="icon" href="images/favicon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQUIPE 5 </title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="container">
-    <section class="header">
-      <h2>Nova conta</h2>
-    </section>
+    <main class="tela-principal">
 
-    <form id="form" class="form">
-      <div class="form-content">
-        <label for="username">Nome do usuário</label>
-        <input
-          type="text"
-          id="username"
-          placeholder="Digite o nome do usuario..."
-        />
-        <a>Aqui vai a mensagem de erro....</a>
-      </div>
+        <section class='conteudos'>
 
-      <div class="form-content">
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Digite o seu email..."
-        />
-        <a>Aqui vai a mensagem de erro....</a>
-      </div>
+            <h1>Quiz</h1>
+            
 
-      <div class="form-content">
-        <label for="password">Senha</label>
-        <input
-          type="password"
-          id="password"
-          placeholder="Digite sua senha..."
-        />
-        <a>Aqui vai a mensagem de erro....</a>
-      </div>
+            <article class='centro' id='instrucoes'>
+                Leia a questão e clique na resposta correta.
+            </article>
 
-      <div class="form-content">
-        <label for="password-confirmation">Confirmação de senha</label>
-        <input
-          type="password"
-          id="password-confirmation"
-          placeholder="Digite sua senha novamente..."
-        />
-        <a>Aqui vai a mensagem de erro....</a>
-      </div>
+            <article class='questoes'>
+                
+                <header class='questao'>
+                    <span id='numQuestao'></span>
+                    <h2 id='pergunta'></h2>
+                </header>
 
-      <button type="submit">Cadastrar</button>
+                <div class='corpo'>
+                    <ol type='A' id='alternativas'>
+                        <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='e' value='1E' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    </ol>
+                </div>
+            </article>
+            
+            <article id='aviso'>Questão <span id='numero'></span> de <span id='total'></span></article>
+            
+        </section>
 
-    </form>
+        <footer class='centro'>Desenvolvido por Turma 5 &copy; 2024</footer>
+    </main>
 
-  </div>
-  
+<!-- JS externo -->
+<script src="script.js"></script>
 
-  <script src="./script.js"></script>
 </body>
 </html>

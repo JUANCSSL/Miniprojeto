@@ -9,7 +9,7 @@ let placar = 0 // placar
 let numQuestao = document.querySelector('#numQuestao')
 let pergunta   = document.querySelector('#pergunta')
 
-// ALTERNATIVAS
+// ALTERNATIVAS FOI ADICIONADA A ALTERNATIVA E REFERINDO-SE "NDA"
 let a = document.querySelector('#a')
 let b = document.querySelector('#b')
 let c = document.querySelector('#c')
